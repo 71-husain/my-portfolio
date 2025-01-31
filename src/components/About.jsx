@@ -39,7 +39,7 @@ export default function About() {
           </p>
           <p className="mt-4 text-gray-400">
             I enjoy <b>building projects</b>, learning new technologies, and
-            collaborating with developers worldwide. Let's create something awesome!
+            collaborating with developers worldwide. Let's create something awesome! 
           </p>
 
           <motion.a
