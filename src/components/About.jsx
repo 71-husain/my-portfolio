@@ -15,7 +15,7 @@ export default function About() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <img
-            src="https://sm.askmen.com/t/askmen_in/article/f/facebook-p/facebook-profile-picture-affects-chances-of-gettin_fr3n.1200.jpg" // Replace with your profile image
+            src="/public/myphoto.jpg" // Replace with your profile image
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -41,6 +41,9 @@ export default function About() {
             I enjoy <b>building projects</b>, learning new technologies, and
             collaborating with developers worldwide. Let's create something awesome! 
           </p>
+           <p>
+            Now I am working on Social Media Application based on full Stack Next.js Project
+           </p>
 
           <motion.a
             href="#contact"
