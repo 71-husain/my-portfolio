@@ -39,12 +39,10 @@ export default function About() {
           </p>
           <p className="mt-4 text-gray-400">
             I enjoy <b>building projects</b>, learning new technologies, and
-            collaborating with developers worldwide. Let's create something awesome! 
-          </p>
-           <p>
+            collaborating with developers worldwide. Let's create something awesome!  <br />
             Now I am working on Social Media Application based on full Stack Next.js Project
-           </p>
-
+          </p>
+          
           <motion.a
             href="#contact"
             className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-all"
