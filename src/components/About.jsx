@@ -15,7 +15,7 @@ export default function About() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <img
-            src="/public/myphoto.jpg" // Replace with your profile image
+            src="/myphoto.jpg" // Replace with your profile image
             alt="Profile"
             className="w-full h-full object-cover"
           />

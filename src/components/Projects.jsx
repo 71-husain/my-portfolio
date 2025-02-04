@@ -15,7 +15,7 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="/public/find-place.png"
+              src="/find-place.png"
               alt="Project 1"
               className="w-full h-64 object-cover"
             />
@@ -42,7 +42,7 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="https://s3.envato.com/files/145298956/Preview%20Image%20Set/04_screen1.jpg"
+              src="/weather-image.jpg"
               alt="Project 2"
               className="w-full h-64 object-cover"
             />
@@ -69,7 +69,7 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="https://www.codewithrandom.com/wp-content/uploads/2022/11/codewithrandom49-1024x536.png"
+              src="/public/image.png"
               alt="Project 3"
               className="w-full h-64 object-cover"
             />
