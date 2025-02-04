@@ -25,7 +25,7 @@ export default function Projects() {
                 This is major project based on backend(server-side) that I design to implement my backend knowledge. this project is quite inspired from airbnb.com and include functionality like that.
               </p>
               <a
-                href="#"
+                href="https://find-place.onrender.com/listings"
                 className="text-indigo-500 hover:bg-blue-600 hover:text-white p-2 rounded-lg border-2 border-blue-900 outline-blue-900 transition duration-300"
               >
                 View Project
