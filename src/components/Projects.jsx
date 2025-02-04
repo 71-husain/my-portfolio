@@ -15,7 +15,7 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="https://via.placeholder.com/500"
+              src="/public/find-place.png"
               alt="Project 1"
               className="w-full h-64 object-cover"
             />
