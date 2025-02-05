@@ -69,7 +69,7 @@ export default function Projects() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src="/public/image.png"
+              src="/tic-tac-toe-image.webp"
               alt="Project 3"
               className="w-full h-64 object-cover"
             />
