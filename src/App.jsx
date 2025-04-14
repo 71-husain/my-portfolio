@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-      <div className="mx-auto px-4 mx-w-screen-xl">
+      <div className="mx-auto mx-w-screen-xl">
         <Hero/>
         <About/>
         <Projects/>
