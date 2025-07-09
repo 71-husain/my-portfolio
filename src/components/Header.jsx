@@ -1,56 +1,57 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
-      <header  className="bg-transparent fixed top-0 left-0 w-full z-50 shadow-lg">
+      <header className="z-50 bg-white/10 backdrop-blur-md fixed top-0 left-0 w-full shadow-lg">
         <nav className="flex justify-between items-center max-w-screen-xl mx-auto px-6 py-4">
           <h1 className="text-white text-3xl font-bold">Husain Ansari</h1>
-          <ul className="flex space-x-6">
-            <li>
-              <a
-                href="#hero"
-                className="text-white text-lg hover:text-xl hover:text-orange-400 hover:underline hover:underline-offset-4 hover:decoration-orange-400 transition-all duration-200"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="text-white text-lg hover:text-xl hover:text-orange-400 hover:underline hover:underline-offset-4 hover:decoration-orange-400 transition-all duration-300"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="text-white text-lg hover:text-xl hover:text-orange-400 hover:underline hover:underline-offset-4 hover:decoration-orange-400 transition-all duration-300"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#skills"
-                className="text-white text-lg hover:text-xl hover:text-orange-400 hover:underline hover:underline-offset-4 hover:decoration-orange-400 transition-all duration-300"
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-white text-lg hover:text-xl hover:text-orange-400 hover:underline hover:underline-offset-4 hover:decoration-orange-600 transition-all duration-300"
-              >
-                Contact
-              </a>
-            </li>
+
+          {/* Hamburger Icon (Mobile Only) */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-white text-2xl lg:hidden"
+          >
+            {menuOpen ? <FiX /> : <FiMenu />}
+          </button>
+
+          {/* Desktop Nav */}
+          <ul className="hidden lg:flex space-x-6">
+            {["home", "about", "projects", "skills", "contact"].map((id) => (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  className="text-white text-lg hover:text-orange-400 hover:underline underline-offset-4 transition-all duration-200"
+                >
+                  {id.charAt(0).toUpperCase() + id.slice(1)}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
+
+        {/* Mobile Menu Dropdown */}
+        {menuOpen && (
+          <div className="lg:hidden bg-gray-900 text-white px-6 pb-4 space-y-4">
+            {["home", "about", "projects", "skills", "contact"].map((id) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                onClick={() => setMenuOpen(false)}
+                className="block text-lg hover:text-orange-400 transition-all"
+              >
+                {id.charAt(0).toUpperCase() + id.slice(1)}
+              </a>
+            ))}
+          </div>
+        )}
       </header>
 
+      {/* Keep your hero section the same */}
       <section
         id="hero"
         className="relative w-full h-screen bg-gray-900 flex items-center justify-center text-center text-white px-6 py-4"
